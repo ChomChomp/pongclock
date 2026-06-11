@@ -1,0 +1,17 @@
+# Virtual environment (recreate with: python3 -m venv .venv && .venv/bin/pip install textual)
+.venv/
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+
+# Packaging build artifacts (left behind by pip/uv builds)
+build/
+dist/
+*.egg-info/
+
+# Claude Code local (per-machine) settings
+.claude/settings.local.json
+
+# macOS noise
+.DS_Store

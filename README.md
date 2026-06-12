@@ -14,18 +14,32 @@ so it crosses the goal line right on the minute boundary.
 Rendering uses half-block characters (`▀`) for double vertical resolution,
 redrawn at 60 fps with a tiny framebuffer, so the animation stays fluid.
 
-## Run it
+## Install
+
+Install Pong Clock with [pipx](https://pipx.pypa.io/):
 
 ```sh
-python3 -m venv .venv
-.venv/bin/pip install textual
-.venv/bin/python pong_clock.py
+pipx install pongclock
+```
+
+Then run:
+
+```sh
+pongclock
 ```
 
 | Key     | Action |
 | ------- | ------ |
 | `q`     | Quit   |
 | `space` | Pause  |
+
+## Develop from source
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -e .
+.venv/bin/pongclock
+```
 
 ## Test
 
